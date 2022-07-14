@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+<label id="name-label">Name</label><p><input id="name" type="text" placeholder="Enter you name" required></p>
+<label id="email-label">Email</label><p><input id="email" type="email" placeholder="Enter you Email" required></p>
+<label id="number-label">Age(optional)</label><p><input id="number" type="number" min='10' max='99' placeholder="Age"></p>
+<label id="select-label"> Which option best describes your current role? </label><br><br>
+<select id="dropdown">
+  <option selected="true" disabled="disabled">Select current holder</option>
+  <option value="Student">Student</option>
+  <option value="Full Time Job">Full Time Job</option>
+  <option value="Full Time Learner">Full Time Learner</option>
+  <option value="Prefer not to say">Prefer not to say</option>
+  <option value="Other">Other</option>
+</select>
+<p id = "radio-text">Would you recommend freeCodeCamp to a friend?</p>
+<input type="radio" id="definitely" name="recommend" value="Definitely" checked="checked">
+  <label for="definitely" style = "color:white">Definitely</label><br>
+  <input type="radio" id="maybe" name="recommend" value="Maybe">
+  <label for="maybe" style = "color:white">Maybe</label><br>
+  <input type="radio" id="not_sure" name="recommend" value="Not sure">
+<label for="not_sure" style = "color:white">Not sure</label><br><br>
+
+<p id = "text-dropdown">What is your favorite feature of freeCodeCamp?</p>
+<select id="dropdown2">
+  <option selected="true" disabled="disabled">Select current holder</option>
+  <option value="Challenges">Challenges</option>
+  <option value="Projects">Projects</option>
+  <option value="Community">Community</option>
+  <option value="Open Source">Open Source</option>
+</select>
+
+<p id = "text-checkbox">What would you like to see improved? (Check all that apply)</p>
+<input type="checkbox" id="check1" value="front-end">
+<label for="check1" style = "color: white">Front-end Projects</label><br>
+<input type="checkbox" id="check2" value="back-end">
+<label for="check2" style = "color: white">Back-end Projects</label><br>
+<input type="checkbox" id="check3" value="data-visualization">
+<label for="check3" style = "color: white">Data Visualization</label><br>
+<input type="checkbox" id="check4" value="challenges">
+<label for="check4" style = "color: white">Challenges</label><br>
+<input type="checkbox" id="check5" value="open-source">
+<label for="check5" style = "color: white">Open Source Community</label><br>
+<input type="checkbox" id="check6" value="gitter-help">
+<label for="check6" style = "color: white">Gitter help rooms</label><br>
+<input type="checkbox" id="check7" value="videos">
+<label for="check7" style = "color: white">Videos</label><br>
+<input type="checkbox" id="check8" value="city-meetup">
+<label for="check8" style = "color: white">City Meetups</label><br>
+<input type="checkbox" id="check9" value="wiki">
+<label for="check9" style = "color: white">Wiki</label><br>
+<input type="checkbox" id="check10" value="forum">
+<label for="check10" style = "color: white">Forum
+</label><br>
+<input type="checkbox" id="check11" value="courses">
+<label for="check11" style = "color: white">Additional Courses
+</label><br>
+<p id = "comments">Any comments or suggestions?<p>
+<textarea placeholder = "Enter your comment here..."></textarea>
+<br><br>
+<button type="submit" id="submit" value="Submit">Submit</button>
+
+</form>
+</body>
+</html>
